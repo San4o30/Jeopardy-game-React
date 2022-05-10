@@ -1,0 +1,93 @@
+.modal {
+  display: block;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -184px;
+  max-width: 617px;
+  padding: 3rem;
+  background: #04aa6d;
+  border-radius: 20px;
+  z-index: 100;
+  box-shadow: 0 0 10px -6px rgba(0,0,0, .5);
+  visibility: hidden;
+  animation: modal-hide .15s both;
+}
+.modal.show {
+  animation: modal-show .3s;
+  visibility: visible;
+  color: white;
+}
+
+
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.continued-btn {
+  border: none;
+  padding: 17px 31px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  background: rgb(6, 95, 168);
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  text-align: start;
+}
+
+#login {
+  margin: 20px 0;
+	border: 1px solid gainsboro;
+	background: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+  outline-color: rgb(179, 255, 0);
+}
+
+
+
+
+
+
+
+@keyframes modal-show {
+  0% {
+    transform: scale(0.7);
+    visibility: hidden;
+  }
+  45% {
+      transform: scale(1.05);
+      visibility: visible;
+  }
+  80% {
+      transform: scale(0.95);
+      visibility: visible;
+  }
+  100% {
+      transform: scale(1);
+      visibility: visible;
+  }
+}
+@keyframes modal-hide {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+      visibility: visible;
+  }
+  100% {
+      transform: scale(0.5);
+      opacity: 0;
+      visibility: hidden;
+  }
+}

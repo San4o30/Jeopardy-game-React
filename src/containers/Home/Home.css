@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 1em;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+}
+
+.home {
+  text-align: center;
+}
+
+.mt {
+  margin-top: 30vh;
+}
+.home__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

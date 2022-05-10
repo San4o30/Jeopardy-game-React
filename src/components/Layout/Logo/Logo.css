@@ -1,0 +1,12 @@
+.logo {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  font-family: 'Merriweather', serif;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.logo__img {
+  max-width: 135px;
+}

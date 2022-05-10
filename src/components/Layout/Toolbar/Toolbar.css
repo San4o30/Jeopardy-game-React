@@ -1,0 +1,7 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.0625rem solid #e0e0e0;
+  padding: 22px;
+}

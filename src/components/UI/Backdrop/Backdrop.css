@@ -1,0 +1,14 @@
+.back-drop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  z-index: 99;
+  transition: .15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
