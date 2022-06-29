@@ -13,7 +13,7 @@ function Home() {
 
   const changeHandler = (e) => {
     setUser(e.target.value)
-    const res = /^[А-яA-z0-9_.]+$/.exec(user);
+    const res = /^^[А-яA-z0-9_.]+$/.exec(user);
     if (!res) {
       setUserValid(true)
       setUserValidError('Некорректное имя')
@@ -62,8 +62,9 @@ function Home() {
               id='login'
               onChange={e => changeHandler(e)}
               placeholder='Имя'
-              required="user"
+              required="hui"
             />
+
             <input onClick={() => dispatch(setUserName(user))} className='continued-btn' type="submit" value="Войти" />
           </form>
         </div>
